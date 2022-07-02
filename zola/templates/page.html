@@ -45,9 +45,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10 col-xxl-8">
         <article>
-          <div class="page-header">
-            <p>{{ page.title }}</p>
-          </div>
+          <p>{{ page.title }}</p>
           {% if page.extra.lead %}<p class="lead">{{ page.extra.lead }}</p>{% endif %}
           {{ page.content | safe }}
         </article>
