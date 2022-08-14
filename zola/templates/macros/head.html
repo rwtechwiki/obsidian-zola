@@ -61,12 +61,12 @@
 {% else %}
 	{% set page_path = "/404.html" %}
 {% endif %}
-<title>{{ title_addition }}</title>
+<title>{{ title }}{{ title_addition }}{{ description }}</title>
 <meta name="description" content="{{ description }}">
 <link rel="canonical" href="{{ page_url | safe }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rwtechwiki.github.io/docs/files/slide_header.gif">
+<meta name="twitter:image" content="https://rwtechwiki.github.io/docs/files/slide-header.gif">
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
 
@@ -74,7 +74,7 @@
 <meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="{{ type }}">
 <meta property="og:url" content="{{ page_url | safe }}">
-<meta property="og:image" content="https://rwtechwiki.github.io/docs/files/slide_header.gif">
+<meta property="og:image" content="https://rwtechwiki.github.io/docs/files/slide-header.gif">
 
 <meta property="og:updated_time" content="{{ updated_time }}">
 <meta property="og:site_name" content="{{ title }}">
