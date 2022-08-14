@@ -81,19 +81,6 @@
 <meta property="og:updated_time" content="{{ updated_time }}">
 <meta property="og:site_name" content="{{ title }}">
 
-{% if config.extra.open.audio %}
-<meta property="og:audio" content="{{ config.extra.open.audio }}">
-{% endif %}
-
-{% if config.extra.open.locale %}
-<meta property="og:locale" content="{{ config.extra.open.locale }}">
-{% endif %}
-
-{% if config.extra.open.videos %}
-{% for video in config.extra.open.videos %}
-<meta property="og:video" content="{{ get_url(path=video) }}">
-{% endfor %}
-{% endif %}
 <meta property="article:publisher" content="https://www.facebook.com/{{ config.extra.open.facebook_publisher }}">
 <meta property="article:author" content="https://www.facebook.com/{{ config.extra.open.facebook_author }}">
 <meta property="og:locale" content="{{ config.extra.open.og_locale }}">
