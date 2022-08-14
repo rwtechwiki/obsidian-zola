@@ -66,10 +66,12 @@
 <link rel="canonical" href="{{ page_url | safe }}">
 
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ config.base_url | safe }}/{{ config.extra.open.image }}">
 <meta name="twitter:title" content="{{ title }}">
-<meta name="twitter:image" content="https://rwtechwiki.github.io/docs/files/{{ page.title }}.gif">
+<meta name="twitter:description" content="{{ description }}">
 
 <meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ description }}">
 <meta property="og:type" content="{{ type }}">
 <meta property="og:url" content="{{ page_url | safe }}">
 <meta property="og:image" content="https://rwtechwiki.github.io/docs/files/{{ page.title }}.gif">
