@@ -17,8 +17,8 @@
 {% macro favicons() %}
   <meta name="theme-color" content="{{ config.extra.theme_color | default(value="#fff") }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="apple-touch-icon.png") | safe }}">
-  <link rel="icon" type="image/gif" sizes="32x32" href="{{ get_url(path="Move Wiki Icon 32x32.gif") | safe }}">
-  <link rel="icon" type="image/gif" sizes="16x16" href="{{ get_url(path="Move Wiki Icon 16x16.gif") | safe }}">
+  <link rel="icon" type="image/gif" sizes="32x32" href="{{ get_url(path="docs/files/move-wiki-icon-32x32.gif") | safe }}">
+  <link rel="icon" type="image/gif" sizes="16x16" href="{{ get_url(path="docs/files/move-wiki-icon-16x16.gif") | safe }}">
   {% if not config.extra.is_netlify %}
     <link rel="manifest" href="{{ get_url(path="site.webmanifest") | safe }}">
   {% endif %}
