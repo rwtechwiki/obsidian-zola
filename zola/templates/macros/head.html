@@ -39,6 +39,7 @@
   is_page=false,
   page_images="",
   page_section="",
+  header_gif_title="flopping_embed",
   created_time="2021-05-01T08:08:00+08:00",
   updated_time="2021-05-01T08:08:08+08:00"
   )
@@ -61,20 +62,20 @@
 {% else %}
 	{% set page_path = "/404.html" %}
 {% endif %}
-<title>{{ title }}{{ title_addition }}{{ description }}</title>
-<meta name="description" content="the page for one of the moves in rain world 1">
+<title>{{ title }}{{ title_addition }}</title>
+<meta name="description" content="{{ description }}">
 <link rel="canonical" href="{{ page_url | safe }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://rwtechwiki.github.io/docs/files/flopping-embed.gif">
-<meta name="twitter:title" content="{{ title }} test title 2">
-<meta name="twitter:description" content="the page for one of the moves in rain world 2">
+<meta name="twitter:image" content="https://rwtechwiki.github.io/docs/files/{{header_gif_title}}.gif">
+<meta name="twitter:title" content="{{ title }}">
+<meta name="twitter:description" content="{{description}}">
 
-<meta property="og:title" content="{{ title }} test title 3">
-<meta property="og:description" content="the page for one of the moves in rain world 3">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{description}}">
 <meta property="og:type" content="{{ type }}">
 <meta property="og:url" content="{{ page_url | safe }}">
-<meta property="og:image" content="https://rwtechwiki.github.io/docs/files/flopping-embed.gif">
+<meta property="og:image" content="https://rwtechwiki.github.io/docs/files/{{header_gif_title}}.gif">
 
 <meta property="og:updated_time" content="{{ updated_time }}">
 <meta property="og:site_name" content="{{ title }}">

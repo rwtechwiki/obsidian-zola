@@ -205,12 +205,7 @@ class DocPath:
         """Gets the title of the page."""
 
         # The replacement might not be necessary, filenames cannot contain double quotes
-        title = " ".join(
-            [
-                item if item[0].isupper() else item.title()
-                for item in self.old_path.stem.split(" ")
-            ]
-        ).replace('"', r"\"")
+        title = self.old_path.stem.replace('"', r"\"")
         return title
 
     @property
