@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Check for python-is-python3 installed
 if ! command -v python &>/dev/null; then
@@ -57,9 +57,9 @@ rsync -a content/ build/content
 # Use obsidian-export to export markdown content from obsidian
 mkdir -p build/content/docs build/__docs
 if [ -z "$STRICT_LINE_BREAKS" ]; then
-	bin/obsidian-export --frontmatter=never --hard-linebreaks --no-recursive-embeds $VAULT build/__docs
+	~/.cargo/bin/obsidian-export --hard-linebreaks --no-recursive-embeds $VAULT build/__docs
 else
-	bin/obsidian-export --frontmatter=never --no-recursive-embeds $VAULT build/__docs
+	~/.cargo/bin/obsidian-export --no-recursive-embeds $VAULT build/__docs
 fi
 
 # Run conversion script
